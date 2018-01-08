@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BottomSheetPicker Sample</string>
+    <string name="file_provider_authority">com.quanturium.android.example.bottomsheetpicker.fileprovider</string>
+    <string name="open_picker">Open picker</string>
+</resources>

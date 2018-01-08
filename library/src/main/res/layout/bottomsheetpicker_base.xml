@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed Materials - Property of IBM
+  5725S57
+  Copyright IBM Corp. 2016
+  US Government Users Restricted Rights - Use, duplication or disclosure
+  restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bottomsheetpicker_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="16dp"/>
+
+    <FrameLayout
+        android:id="@+id/bottomsheetpicker_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_bottomsheetpicker_bottom_view">
+
+        <FrameLayout
+            android:id="@+id/bottomsheetpicker_bottom_custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bottomsheetpicker_camera_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:src="@drawable/ic_bottomsheetpicker_camera"
+                android:tint="?attr/colorAccent"
+                android:visibility="gone"
+                tools:ignore="NewApi"
+                tools:visibility="visible"/>
+
+            <Button
+                android:id="@+id/bottomsheetpicker_file_browser_button"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/bottomsheetpicker_open_file_browser"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomsheetpicker_bottom_multiselect_layout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="?attr/colorAccent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bottomsheetpicker_bottom_multiselect_close_image_view"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_bottomsheetpicker_close"
+                android:tint="@android:color/white"
+                tools:ignore="NewApi"/>
+
+            <TextView
+                android:id="@+id/bottomsheetpicker_bottom_multiselect_count_text_view"
+                android:layout_marginLeft="24dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/bottomsheetpicker_bottom_multiselect_insert_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:minWidth="0dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="8dp"
+                android:text="@string/bottomsheetpicker_select"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

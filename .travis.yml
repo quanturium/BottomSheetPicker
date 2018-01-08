@@ -1,0 +1,26 @@
+language: android
+jdk: oraclejdk8
+sudo: false
+os: linux
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-26.0.2
+    - build-tools-27.0.3
+    - android-27
+    - extra-google-m2repository
+    - extra-android-m2repository
+    - extra-android-support
+  licenses:
+    - android-sdk-preview-license-.+
+    - android-sdk-license-.+
+    - google-gdk-license-.+
+script:
+  - ./gradlew clean build ci
+before_install:
+  - yes | sdkmanager "platforms;android-27"
+env:
+  global:
+    - BINTRAY_USER="quanturium"
+    - secure: G3NZ3BsJMwm8EvPS42LY7LIModh22dwbTksHkw+y/Cuxbj6xqr3uQqFXhFj53MmFYFRIL2c9o1dArF0Ub2zql26vTh3LZPszYs/CfFWF64gLppu9St0pFyIQQRWyWJfrAM5rHE4VjWMyVyXJGUoftdPw0sl6DIZts6Cc7R/b8KWJ7BkuzQS9TIpkuCZCfrIBVctZswblbU7p92BA75NeUuwS9nORu+bNoK2v10Q95WV5tJqm78SyXQZE33INr3+Pg3J3BX1FOhvbDgq5EWGlXG6G18ZmZw4ix1HZcIdiEoa59CNOfDqb7l6UvZqyoCDCdtHxyVX27z3pDj42g/6qFPUT8XyxiCpMuBCgrOb2VayxRcVrLpjs09cWgW8g9WRygh4NSh9PglJS0NbwjApQ8g6O0y12R9jlMfG6gd/+X8o5ZVSBUmYgqtUp4Z5ZfFu6Ru92+nyWo9BFTH/gHbhDsmHZ6X+U3aKLKRn/ud1gYonuXAOtSsIwp/ogj0NyF4zBWkWYydKkLtPne1+gBhpVSbLP4oqFTu5+5G55F0ZXaXpQO0PpQghe0HnD0wGBJWwEakOsBKLdSkayNc+QUFWkfVBf9gBZsKfldzzz8ueHk3CNrrTJxaYjxcSY4msQlw5GW09LPTLgnJ2Q8HTIHoYvrBzXfv6as8AU818MlKu+xnA=

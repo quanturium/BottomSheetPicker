@@ -1,0 +1,9 @@
+<resources>
+    <string name="bottomsheetpicker_photo">Take a photo</string>
+    <string name="bottomsheetpicker_video">Take a video</string>
+    <string name="bottomsheetpicker_open_file_browser">Open File Browser</string>
+    <string name="bottomsheetpicker_select">Select</string>
+    <string name="bottomsheetpicker_selected_count">%d selected</string>
+    <string name="file_provider_authority">com.quanturium.android.bottomsheetpicker.fileprovider</string>
+    <string name="file_picker_item">File picker item</string>
+</resources>
