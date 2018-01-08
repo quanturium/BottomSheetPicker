@@ -6,7 +6,7 @@
 
 Picker | Taking photo / video | Multi-select of items
 --- | --- | ---
-![Picker](https://raw.githubusercontent.com/quanturium/BottomSheetPicker/master/assets/screenshot001.png) | ![Picker](https://raw.githubusercontent.com/quanturium/BottomSheetPicker/master/assets/screenshot003.png) | ![Picker](https://raw.githubusercontent.com/quanturium/BottomSheetPicker/master/assets/screenshot003.png)
+![Picker](https://raw.githubusercontent.com/quanturium/BottomSheetPicker/master/assets/screenshot001.png) | ![Picker](https://raw.githubusercontent.com/quanturium/BottomSheetPicker/master/assets/screenshot002.png) | ![Picker](https://raw.githubusercontent.com/quanturium/BottomSheetPicker/master/assets/screenshot003.png)
 
 ## Table of Contents
 1. [Demo](#demo)
@@ -66,7 +66,7 @@ BottomSheetPicker requires some additional configurations made to your app's str
 
 ### Usage
 
-
+See sample app for an example of using BottomSheetPicker with required runtime permissions.
 
 ## License
     Copyright (c) 2018 Arnaud Frugier & Steven Hong
