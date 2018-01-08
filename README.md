@@ -16,7 +16,7 @@ Picker | Taking photo / video | Multi-select of items
 
 ## Demo
 
-[![Demo Video](http://img.youtube.com/vi/KVohfD_5FFk/0.jpg)](https://www.youtube.com/embed/KVohfD_5FFk/)
+[![Demo Video](http://img.youtube.com/vi/KVohfD_5FFk/0.jpg)](https://www.youtube.com/watch?v=KVohfD_5FFk)
 
 ## Setup
 
