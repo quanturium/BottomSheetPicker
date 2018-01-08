@@ -28,7 +28,7 @@ The easiest way to add the Material DateTime Picker library to your project is b
 
 ```groovy
 dependencies {
-  compile 'com.quanturium.android:bottomsheetpicker:1.0.0'
+  compile 'com.quanturium.android:bottomsheetpicker:2.0.0'
 }
 ```
 
