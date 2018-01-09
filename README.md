@@ -2,7 +2,7 @@
 
 [![Core](https://api.bintray.com/packages/quanturium/maven/bottomsheetpicker/images/download.svg) ](https://bintray.com/quanturium/maven/bottomsheetpicker/_latestVersion)
 [![Build Status](https://travis-ci.org/quanturium/BottomSheetPicker.svg?branch=master)](https://travis-ci.org/quanturium/BottomSheetPicker)
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/quanturium/BottomSheetPicker/blob/master/LICENSE.txt)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/quanturium/BottomSheetPicker/blob/master/LICENSE.txt)
 
 Picker | Taking photo / video | Multi-select of items
 --- | --- | ---
