@@ -41,7 +41,7 @@ public class BottomSheetPickerRecyclerAdapter extends CursorRecyclerAdapter<Bott
 	public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 		View v = layoutInflater.inflate(R.layout.bottomsheetpicker_tile, parent, false);
 		MultiSelectWrapper multiSelectWrapper = MultiSelectWrapper.wrap(v);
-		multiSelectWrapper.setDrawableOffset(selectionViewPadding,selectionViewPadding);
+		multiSelectWrapper.setDrawableOffset(selectionViewPadding, selectionViewPadding);
 		return new ViewHolder(multiSelectWrapper);
 	}
 
@@ -93,12 +93,16 @@ public class BottomSheetPickerRecyclerAdapter extends CursorRecyclerAdapter<Bott
 
 	public List<Uri> getItems(List<Integer> positionList) {
 		List<Uri> itemList = new ArrayList<>();
-		int savedPosition = getCursor().getPosition();
-		for (Integer p : positionList) {
-			getCursor().moveToPosition(p);
-			itemList.add(getUriFromCursor(getCursor()));
+
+		if (getCursor() != null) {
+			int savedPosition = getCursor().getPosition();
+			for (Integer p : positionList) {
+				getCursor().moveToPosition(p);
+				itemList.add(getUriFromCursor(getCursor()));
+			}
+			getCursor().moveToPosition(savedPosition);
 		}
-		getCursor().moveToPosition(savedPosition);
+
 		return itemList;
 	}
 
@@ -156,8 +160,8 @@ public class BottomSheetPickerRecyclerAdapter extends CursorRecyclerAdapter<Bott
 			view.setOnLongClickListener(this);
 
 			multiSelectWrapper = (MultiSelectWrapper) view;
-			thumbnail = (ImageView) view.findViewById(R.id.bottomsheetpicker_thumbnail);
-			videoIcon = (ImageView) view.findViewById(R.id.bottomsheetpicker_video_icon);
+			thumbnail = view.findViewById(R.id.bottomsheetpicker_thumbnail);
+			videoIcon = view.findViewById(R.id.bottomsheetpicker_video_icon);
 		}
 
 		@Override
