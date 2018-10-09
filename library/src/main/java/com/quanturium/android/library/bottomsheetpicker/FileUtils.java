@@ -26,7 +26,8 @@ public class FileUtils {
 		}
 
 		if (file != null) {
-			result = FileProvider.getUriForFile(context, context.getString(R.string.file_provider_authority), file);
+			if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) result = FileProvider.getUriForFile(context, context.getString(R.string.file_provider_authority), file);
+            		else result = Uri.fromFile(file);
 		}
 		return result;
 	}
@@ -41,7 +42,8 @@ public class FileUtils {
 		}
 
 		if (file != null) {
-			result = FileProvider.getUriForFile(context, context.getString(R.string.file_provider_authority), file);
+			if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) result = FileProvider.getUriForFile(context, context.getString(R.string.file_provider_authority), file);
+            		else result = Uri.fromFile(file);
 		}
 		return result;
 	}
